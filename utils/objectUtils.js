@@ -93,7 +93,7 @@ const getAgentOptions = (options = {}) => {
         restClientConfig: options.restClientConfig,
         launchId: process.env.RP_LAUNCH_ID || options.launchId,
         logLaunchLink: options.logLaunchLink,
-        headers: { "X_RP_KEY": process.env.RP_X_RP_KEY }
+        headers: { "X-RP-KEY": process.env.RP_X_RP_KEY }
     };
 };
 
